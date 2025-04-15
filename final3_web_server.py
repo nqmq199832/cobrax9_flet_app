@@ -18,9 +18,9 @@ def main(page: ft.Page):
     page.title = "COBRA X9 PANEL"
     page.window_width = 600
     page.window_height = 600
+    page.window_centered = True
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
-    page.window_center()
     page.scroll = ft.ScrollMode.ALWAYS
 
     # Background image or splash
