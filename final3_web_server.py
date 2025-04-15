@@ -14,7 +14,7 @@ def main(page: ft.Page):
 
     # ---------- SHARED UTILS ----------
     def telegram(e): webbrowser.open_new('https://t.me/shopandbuyy')
-    def whatsapp(e): webbrowser.open_new('https://wa.me/qr/ENLYCD65EQZAK1')
+    def whatsapp(e): webbrowser.open_new('https://wa.me/qr/ENLYCD65EQZK1')
 
     def switch_to_sms_panel():
         login_card.visible = False
