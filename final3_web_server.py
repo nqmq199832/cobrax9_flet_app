@@ -1,6 +1,5 @@
 import flet as ft
 import requests
-import os
 import webbrowser
 from time import sleep
 
@@ -270,4 +269,4 @@ def main(page: ft.Page):
     # ---------- PAGE ADD ----------
     page.add(login_card, sms_panel)
 
-ft.app(target=main, view=ft.WEB_BROWSER, port=int(os.environ.get("PORT", 8550)))
+ft.app(target=main, view=ft.WEB_BROWSER, port=8550)
