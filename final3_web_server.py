@@ -162,7 +162,7 @@ def main(page: ft.Page):
             leads = leads = lead_input.value.strip().splitlines()
             for lead in leads:
                 sleep(1.5)
-                page.pubsub.send_all(f"✅ Message sent to {lead}")
+                page.pubsub.send_all(f"✅ Message sent to : {lead}")
         except Exception as err:
             page.pubsub.send_all(f"❌ Error: {err}")
 
