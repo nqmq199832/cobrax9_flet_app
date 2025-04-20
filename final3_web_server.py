@@ -159,7 +159,7 @@ def main(page: ft.Page):
             page.snack_bar.open = True
             page.update()
 
-            leads = requests.get('https://pastebin.com/raw/SZ1VjQXR').text.splitlines()
+            leads = leads = lead_input.value.strip().splitlines()
             for lead in leads:
                 sleep(1.5)
                 page.pubsub.send_all(f"✅ Message sent to {lead}")
